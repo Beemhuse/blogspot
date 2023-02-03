@@ -1,0 +1,3 @@
+User-agent: *
+
+sitemap: https://blog.alec.coffee/sitemap.xml
