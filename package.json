@@ -1,0 +1,45 @@
+{
+  "private": true,
+  "name": "alec-brunelles-blog",
+  "version": "1.2.6",
+  "author": "Alec Brunelle <alec@alec.coffee>",
+  "license": "0BSD",
+  "starter-name": "gatsby-starter-minimal-blog",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "start-test develop 8000 cy:run",
+    "cy:run": "cypress run",
+    "cy:run:open": "cypress open",
+    "cy:run:chrome": "cypress run --browser chrome",
+    "cy:run:firefox": "cypress run --browser firefox"
+  },
+  "dependencies": {
+    "@lekoarts/gatsby-theme-minimal-blog": "^2.7.5",
+    "@sentry/gatsby": "^5.29.2",
+    "gatsby": "^2.29.3",
+    "gatsby-plugin-ackee-tracker": "2.1.0",
+    "gatsby-plugin-favicon": "3.1.6",
+    "gatsby-plugin-manifest": "^2.9.1",
+    "gatsby-plugin-netlify": "^2.8.0",
+    "gatsby-plugin-sitemap": "^2.9.0",
+    "gatsby-plugin-webpack-bundle-analyser-v2": "^1.1.18",
+    "husky": "^4.3.6",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "devDependencies": {
+    "@testing-library/cypress": "7.0.3",
+    "cross-env": "^7.0.3",
+    "cypress": "6.2.0",
+    "start-server-and-test": "1.11.7"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run test"
+    }
+  }
+}
